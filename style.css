@@ -14,7 +14,16 @@ body {
   background-size: 1000px;
   background-attachment: fixed;
 }
-
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+}
 .ben {
   display: flex;
   justify-content: center;
