@@ -10,8 +10,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("img/batik.jpeg") center/cover no-repeat;
+  background: url("img/batik.jpeg") center/cover;
   z-index: -1;
+  transform: scale(1.3);
 }
 .bg::after {
   content: "";
@@ -32,7 +33,7 @@
   background-attachment: fixed; */
 /* }
 body::before { */
-  /* content: "";
+/* content: "";
   position: fixed;
   top: 0;
   left: 0;
@@ -40,7 +41,7 @@ body::before { */
   height: 100%;
   background: rgba(0,0,0,0.6);
   z-index: -1; */
-/* } */ 
+/* } */
 .ben {
   display: flex;
   justify-content: center;
@@ -119,7 +120,7 @@ button:active {
   font-size: 1.4rem;
 }
 .cont-foto {
-  box-shadow: 0 0 14px rgba(0, 0, 0, 0.253);
+  transform: scale(1.2);
   overflow: hidden;
   border-radius: 50%;
   max-width: 100px;
@@ -130,9 +131,8 @@ button:active {
   max-width: 100px;
   aspect-ratio: 1/1;
   object-fit: cover;
+  object-position: left;
   margin: 0 auto;
-
-  transform: scale(1.6);
 }
 
 #loader {
