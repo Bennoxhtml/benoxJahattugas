@@ -8,6 +8,7 @@
 body {
     background-attachment:fixed;
   background: url(img/batik.jpeg);
+  background-size:cover;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1000px;
