@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Kalkulator Bilangan</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section class="ben">
+
+   
+    <div id="loader">
+      <h2 class="head-load">Selamat Datang Di Benox Menghitung</h2>
+      <div class="spiner"></div>
+      <h1 class="glow">Harap Tunggu<span></span></h1>
+      <p>Admin Benox :</p>
+      <p>"Proses ini memerlukan sedikit waktu, Mohon Bersabar!"</p>
+    </div>
+    <div class="container">
+      <h1 class="head-name">BenoxMenghitung</h1>
+      <div class="cont-foto">
+        <img src="img/batik.jpeg" />
+      </div>
+      <h1 class="head-one">Kalkulator Bilangan</h1>
+
+      <input type="text" id="num1" placeholder="Angka pertama" />
+
+      <select id="type1">
+        <option value="desimal">Desimal</option>
+        <option value="biner">Biner</option>
+        <option value="oktal">Oktal</option>
+        <option value="heksa">Heksadesimal</option>
+      </select>
+
+      <select id="operator">
+        <option value="+">Tambah (+)</option>
+        <option value="-">Kurang (-)</option>
+        <option value="*">Kali (×)</option>
+        <option value="/">Bagi (÷)</option>
+      </select>
+
+      <input type="text" id="num2" placeholder="Angka kedua" />
+
+      <select id="type2">
+        <option value="desimal">Desimal</option>
+        <option value="biner">Biner</option>
+        <option value="oktal">Oktal</option>
+        <option value="heksa">Heksadesimal</option>
+      </select>
+
+      <button onclick="calculate()">Hitung</button>
+
+      <div class="result">
+        <p>Desimal : <span id="desimal"></span></p>
+        <p>Biner : <span id="biner"></span></p>
+        <p>Oktal : <span id="oktal"></span></p>
+        <p>Hexa : <span id="hexa"></span></p>
+        <p>Romawi : <span id="romawi"></span></p>
+      </div>
+    </div>
+     </section>
+<!-- Section 2 -->
+ <section id="konversi">
+  <h2>Konversi Bilangan</h2>
+
+  <input type="number" id="inputAngka" placeholder="Masukkan angka">
+
+  <button onclick="convert2()">Konversi</button>
+
+  <div class="hasil">
+    <p>Biner: <span id="biner2"></span></p>
+    <p>Oktal: <span id="oktal2"></span></p>
+    <p>Heksadesimal: <span id="heksa2"></span></p>
+    <p>Romawi: <span id="romawi2"></span></p>
+  </div>
+</section>
+
+
+
+
+    <!-- Script -->
+    <script src="script.js"></script>
+    <script>window.addEventListener("load",function() {
+    const loader =this.document.getElementById("loader");
+
+    setTimeout(() => {
+        loader.classList.add("hidden");
+
+        setTimeout(() => {
+            loader.style.display="none";
+        }, 500);
+    }, 1500);
+});
+</script>
+  </body>
+</html>
