@@ -6,6 +6,8 @@
 }
 
 body {
+  posiition: relative;
+  z-index:1;
   background:
   url(img/batik.jpeg);
   background-size: cover;
