@@ -31,6 +31,7 @@ body {
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.456);
   border-radius: 12px;
   text-align: center;
+  background-attachment:fixed;
 }
 
 h1 {
